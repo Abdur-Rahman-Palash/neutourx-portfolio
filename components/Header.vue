@@ -1,9 +1,9 @@
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 glass px-6 py-4">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="text-2xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+      <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
         NeutourX
-      </div>
+      </a>
       <nav class="hidden md:flex gap-8">
         <a href="#" class="text-white/80 hover:text-secondary transition-colors">Home</a>
         <a href="#about" class="text-white/80 hover:text-secondary transition-colors">About</a>

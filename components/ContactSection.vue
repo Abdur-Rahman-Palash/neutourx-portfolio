@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 px-4">
+  <section id="contact" class="py-24 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="font-heading text-4xl md:text-section-heading font-bold mb-6">Get In Touch</h2>

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-4">
+  <section id="about" class="py-12 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-8">
         <h2 class="font-heading text-4xl md:text-section-heading font-bold mb-4">About NeutourX</h2>

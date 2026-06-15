@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden" style="background-image: linear-gradient(135deg, rgba(5, 14, 28, 0.85), rgba(0, 35, 102, 0.75)), url('/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+  <section id="home" class="relative min-h-[80vh] flex items-center justify-center overflow-hidden" style="background-image: linear-gradient(135deg, rgba(5, 14, 28, 0.85), rgba(0, 35, 102, 0.75)), url('/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
     <canvas ref="canvasRef" class="absolute inset-0 z-0"></canvas>
     
     <div class="absolute inset-0 bg-gradient-to-br from-background via-primary to-background opacity-40 z-10"></div>

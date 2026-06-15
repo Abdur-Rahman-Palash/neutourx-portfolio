@@ -9,19 +9,19 @@
         <div>
           <h4 class="font-heading text-lg font-bold mb-4">Quick Links</h4>
           <ul class="font-body space-y-2 text-gray-400">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li><a href="#home" class="block hover:text-secondary transition-colors">Home</a></li>
+            <li><a href="#about" class="block hover:text-secondary transition-colors">About</a></li>
+            <li><a href="#services" class="block hover:text-secondary transition-colors">Services</a></li>
+            <li><a href="#contact" class="block hover:text-secondary transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 class="font-heading text-lg font-bold mb-4">Services</h4>
           <ul class="font-body space-y-2 text-gray-400">
-            <li>Air Tickets</li>
-            <li>Tour Packages</li>
-            <li>Visa Assistance</li>
-            <li>Hotel Reservations</li>
+            <li><a href="#services" class="block hover:text-secondary transition-colors">Air Tickets</a></li>
+            <li><a href="#services" class="block hover:text-secondary transition-colors">Tour Packages</a></li>
+            <li><a href="#services" class="block hover:text-secondary transition-colors">Visa Assistance</a></li>
+            <li><a href="#services" class="block hover:text-secondary transition-colors">Hotel Reservations</a></li>
           </ul>
         </div>
         <div>
