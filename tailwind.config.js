@@ -17,7 +17,7 @@ export default {
       },
       fontFamily: {
         heading: ['Clash Display', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
         sans: ['Inter', 'system-ui', 'sans-serif']
       },
       fontSize: {

@@ -8,11 +8,28 @@
         </p>
       </div>
       <div class="relative overflow-hidden">
-        <div class="flex gap-12 animate-marquee whitespace-nowrap">
-          <span v-for="(airline, index) in [...airlines, ...airlines]" :key="index"
-            class="text-2xl md:text-3xl font-bold text-white/70 hover:text-secondary transition-colors duration-300 cursor-pointer">
-            {{ airline }}
-          </span>
+        <div class="animate-marquee flex gap-8 items-center">
+          <div
+            v-for="(airline, index) in [...airlines, ...airlines]"
+            :key="`${airline.name}-${index}`"
+            class="flex flex-col items-center gap-3 rounded-3xl bg-white/5 border border-white/10 p-6 w-[180px] md:w-[220px] min-w-[180px] text-center shadow-lg shadow-black/10"
+          >
+            <div class="h-20 flex items-center justify-center w-full">
+              <img
+                v-if="airline.logo"
+                :src="airline.logo"
+                :alt="`${airline.name} logo`"
+                class="h-full object-contain"
+              />
+              <span
+                v-else
+                class="text-xl md:text-2xl font-bold text-white/80"
+              >
+                {{ airline.name }}
+              </span>
+            </div>
+            <p class="font-body text-sm text-gray-300">{{ airline.name }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -21,30 +38,32 @@
 
 <script setup>
 const airlines = [
-  'Emirates',
-  'Qatar Airways',
-  'Singapore Airlines',
-  'Turkish Airlines',
-  'Etihad Airways',
-  'Biman Bangladesh Airlines',
-  'Air Arabia',
-  'FlyDubai',
-  'Malaysia Airlines'
+  { name: 'Emirates', logo: '/emirates.png' },
+  { name: 'Qatar Airways', logo: '/Qatar-airways-animal-logo.png' },
+  { name: 'Singapore Airlines', logo: '/singapore airlines.jpg' },
+  { name: 'Turkish Airlines', logo: '/Turkish.png' },
+  { name: 'Etihad Airways', logo: '/etihad.png' },
+  { name: 'Biman Bangladesh Airlines', logo: '/Biman-Logo-English-Copy.svg' },
+  { name: 'Air Arabia', logo: '/air arabia.png' },
+  { name: 'FlyDubai', logo: '/fly dubai.png' },
+  { name: 'Malaysia Airlines', logo: '/malaysian.png' }
 ]
 </script>
 
 <style scoped>
 @keyframes marquee {
-  from { transform: translateX(0) }
-  to { transform: translateX(-50%) }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .animate-marquee {
-  display: inline-flex;
-  animation: marquee 30s linear infinite;
+  display: flex;
+  gap: 2rem;
+  animation: marquee 24s linear infinite;
+  will-change: transform;
 }
 
-.animate-marquee span {
-  padding-right: 4rem;
+.animate-marquee > div {
+  flex-shrink: 0;
 }
 </style>

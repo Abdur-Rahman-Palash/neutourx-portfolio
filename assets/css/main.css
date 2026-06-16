@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  html, body {
     @apply bg-background text-white;
     font-family: 'Inter', system-ui, sans-serif;
   }
