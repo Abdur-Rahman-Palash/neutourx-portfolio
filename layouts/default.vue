@@ -11,8 +11,8 @@
 useHead({
   script: [
     {
-      src: 'https://aics-sdcf.onrender.com/js/embed.js',
-      'data-business-id': '0c0a917947c82b0a192bce5c5454cbc2',
+      src: "https://aics-sdcf.onrender.com/js/chat-widget.js?v=1781715266965",
+      "data-business-id": "0cb9f74afaa31ddf836d22666eb892d9",
       body: true,
     },
   ],
