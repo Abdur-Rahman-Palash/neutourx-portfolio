@@ -25,3 +25,15 @@
     @apply bg-white/10 backdrop-blur-xl border border-white/20;
   }
 }
+
+/* Chatbot text color override */
+#chat-widget,
+#chat-widget * {
+  color: #000 !important;
+}
+
+#chat-widget input,
+#chat-widget textarea {
+  color: #000 !important;
+  background-color: #fff !important;
+}
